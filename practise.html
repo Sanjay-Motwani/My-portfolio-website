@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body{
+                background-color:grey;
+            }
+            p{
+                background-color:rgb(63, 51, 51);
+                color: white;
+                width: 45%;
+                border: 1px solid silver;
+                float:left;
+            }
+            .paraClass{
+                position: relative;
+                top: 50%;
+                left : 100px;
+            }
+            /**Media Queries for large devices**/
+            @media (min-width: 1500px) {
+                #para1{
+                    width : 30%;
+                    background-color: aqua;
+                    color: black;
+                }
+                #para2{
+                    width : 350px;
+                }
+            /**Media Queries for medium devices**/
+            @media (min-width: 200px) and (max-width: 799px){
+                #para1{
+                    width : 15%;
+                    
+                }
+                #para2{
+                    width : 35px;
+                }
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 style="margin-left:250px;  margin-right: 250px ;text-align: center;font-size: 50px; background-color: blanchedalmond;border: 5px solid black">My Website</h1>
+        <p style="margin-right: 10px;">This is my first paragraph. If you can fit me inside the pocket of your ribbed jeans, Holding you till our eyes meet. I will never be alive and waiting</p>
+        <p>This is my second paragraph. If you can fit me inside the pocket of your ribbed jeans, Holding you till our eyes meet. I will never be alive and waiting</p>
+        <p class="paraClass">This is my paragrapg showing realtive positioning</p>
+        <article style="clear:left">
+            This is my last line for the statement in this regard.
+        </article>
+        <div>
+            <p id= "para1">
+            This is my para1 for the media queries. But it is a very small paragraph. 
+            This paragraph changes color to blue accorging to its media query
+            </p>
+            <p id= "para2">This is my para2 for the media queries</p>
+        </div>
+        
+    </body>
+</html>
